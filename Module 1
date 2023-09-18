@@ -45,7 +45,7 @@ def main():
     while True:
         print(f"Round {round_number}: ", end='')
         
-        trying:
+        try:
             player = get_player_choice()
         except InvalidChoiceException:
             print("Invalid command!")
@@ -82,3 +82,5 @@ def main():
                 round_number = 0
         
         round_number += 1
+if __name__ == "__main__":
+         main()
